@@ -1,0 +1,111 @@
+<div class="container mt-2 ">
+    <div class="row">
+        <div class="col container">
+               
+                <h3 class="mt-3 mb-3 text-center" >Welcome   {{customerName|titlecase}}</h3>
+               
+               
+            
+        </div>
+    </div>
+</div>
+<div class="card">
+    <div class="card-body">
+        <div class="container-fluid bg-secondary">
+            <div class="container-fluid" style="padding-top: 1rem;">
+                <button class="btn btn-info" (click)="getCustomer()" (click)="toggleCustomer()">{{showCustomer? '':'VIEW'}} 
+                    PROFILE</button>
+            </div>
+            <br>
+            <div class="container-fluid" style="padding-bottom: 1rem;" *ngIf='showCustomer'>
+                <table class="table bg-light" style="border: 2ex;">
+                    <thead class="table-dark">
+                        <tr>
+                           <th>UserId</th>
+                            <th>Name</th>
+                            <th>Mobile Number</th>
+                            <th>EmailId</th>
+                            <th>DateOfBirth </th>
+                            <th>Gender </th>
+                            <th>Nationality</th>
+                            <th>AadharNumber</th>
+                            <th>PanNumber</th>
+                            <th>Update</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                           
+                            <td scope="row">
+                                {{customerList.userId}}
+                            </td>
+                            <td scope="row">
+                                {{customerList.customerName}}
+                            </td>
+                            <td scope="row">
+                                {{customerList.mobileNumber}}
+                            </td>
+                            <td scope="row">
+                                {{customerList.emailId}}
+                            </td>
+                            <td scope="row">
+                                {{customerList.dateOfBirth}}
+                            </td>
+                            <td scope="row">
+                                {{customerList.gender}}
+                            </td>
+                            <td scope="row">
+                                {{customerList.nationality}}
+                            </td>
+                            <td scope="row">
+                                {{customerList.aadharNumber}}
+                            </td>
+                            <td scope="row">
+                                {{customerList.panNumber}}
+                            </td>
+                            <td scope="row">
+                                <a class="btn btn-primary" (click)='update()' role="button">Update</a>
+                            
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+           
+       
+            
+
+
+
+
+
+
+            <div class="container">
+                <div class="container col-md-offset-3">
+                   
+                    <div class="container mt-2 mb-2 text-center">
+                        <button class="btn btn-primary btn-lg" 
+                            [routerLink]="['/customer/loanApply']"><b>Apply
+                                Loan</b></button>
+                    </div>
+                    <h5 class="mt-3 mb-3 text-center">Track your Loan Application Status</h5>
+                    <div class="container text-center mt-2 mb-2">
+                        <button class="btn btn-primary btn-lg" 
+                            [routerLink]="['/customer/loanTrack']"><b>Track
+                                Loan</b></button>
+                    </div>
+                    <h5 class="mt-3 mb-3 text-center">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Check Your Loan Agreement</h5>
+                    <div class="container text-center mt-2 mb-2">
+                        <button class="btn btn-primary btn-lg"
+                            [routerLink]="['/customer/loanAgreement']"><b>Loan
+                                Agreement</b></button>
+                    </div>
+
+                </div>
+            </div>

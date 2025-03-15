@@ -1,0 +1,57 @@
+
+<div class="card-body">
+    <h1>UPDATE</h1>
+        <div class="card-body">
+            
+        <table class='table'>
+            <tr>
+                <td>CustomerId</td>
+                <td><input type='text' class='form-control' [(ngModel)]='customer.userId' readonly></td>
+            </tr>
+            <tr>
+                <td>CustomerName</td>
+                <td><input type='text' class='form-control' [(ngModel)]='customer.customerName'></td>
+            </tr>
+            <tr>
+                <td>MobileNumber</td>
+                <td><input type='text' class='form-control' [(ngModel)]='customer.mobileNumber'  required ></td>
+            </tr>
+            <tr>
+                <td>EmailId</td>
+                <td><input type='text' class='form-control' [(ngModel)]='customer.emailId' required email></td>
+            </tr>
+            <tr>
+                <td>DateOfBirth</td>
+                <td>
+                <input class="form-control" id="dateOfBirthId" type="date" placeholder="01/01/1997" required
+                [(ngModel)]='customer.dateOfBirth' />
+            </td>
+            </tr>
+            <tr>
+                <td>Gender</td>
+                <td><input type='text' class='form-control' [(ngModel)]='customer.gender' readonly></td>
+            </tr>
+            <tr>
+                <td>Nationality</td>
+                <td><input type='text' class='form-control' [(ngModel)]='customer.nationality' readonly></td>
+            </tr>
+            <tr>
+                <td>aadharNumber</td>
+                <td><input type='text' class='form-control' [(ngModel)]='customer.aadharNumber'></td>
+            </tr>
+            <tr>
+                <td>panNumber</td>
+                <td><input type='text' class='form-control' [(ngModel)]='customer.panNumber'></td>
+            </tr>
+        </table>
+        <button (click)='updateuser()' class='btn btn-success btn-block'>Update</button>
+        
+    </div>
+    
+ <!-- Below message to be clicked to navigate back to CustomerHome component -->
+ <div *ngIf='message != null' [ngClass]='msgClass' (click)='gotoCustomerHome()'>
+    {{message}}! 
+</div>
+</div>
+    
+

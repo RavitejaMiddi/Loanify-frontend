@@ -1,0 +1,54 @@
+<div class="container">
+    <div class="row">
+      <!-- Adding images to the left side on the page -->
+      <div class="col-sm mt-2">
+        <img src="../assets/emi1.jpg" width="100%" alt="error loading image">
+        
+        <img src="../assets/emi.jpg" width="100%" alt="error loading image">
+      </div>
+
+      <div class=" col-sm mt-2">
+        <div class="alert alert-success col-md-offset-3 col-md-12">
+          <h2>EMI Calculator</h2>
+        
+        </div>
+        
+        <div class="container">
+        
+          <div class="row">
+            <div class="form">
+              <!-- Creating the form for entering the data in to the page -->
+              <div class="form-group">
+                <label>Principal Amount</label>
+                <input type="number" placeholder="0" class="form-control" [(ngModel)]="principal">
+              </div>
+  
+              <div class="form-group">
+                <label>Rate</label>
+                <input type="number" placeholder="0" class="form-control" [(ngModel)]="rate">
+              </div>
+  
+              <div class="form-group">
+                <label>Tenure (In Years)</label><br>
+                <input type="number" placeholder="0" class="form-control" [(ngModel)]="time">
+              </div>
+  
+              <div class="form-group">
+                <!-- Button function conected to backend -->
+                <input type="submit" (click)="calculateEmi()" placeholder="0" class="form-control btn btn-primary"
+                  value="Calculate">
+              </div>
+            </div>
+          </div>
+        </div>
+      
+        <!-- Displaying the emi details and  total loan amount to be payed with the interest-->
+        <div *ngIf=status>
+          <div class="container jumbotron alert alert-success mt-4">
+            <h5>EMI = {{emi | currency:'INR'}}</h5>
+            <h5>Total Amount = {{amt | currency:'INR' }}</h5>
+          </div>
+        </div><br>
+      </div><br>
+    </div><br>
+  </div><br>

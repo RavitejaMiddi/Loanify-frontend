@@ -1,0 +1,23 @@
+/* Styling for the logout message container */
+div {
+    margin: 30px;
+    width: auto;
+    text-align: center; /* Center align the text */
+}
+
+/* Styling for the logout message */
+h4 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
+    color: #800020; /* Burgundy color */
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Soft rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for modern feel */
+}

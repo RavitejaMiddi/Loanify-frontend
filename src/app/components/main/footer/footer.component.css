@@ -1,0 +1,15 @@
+/* Footer Styling */
+footer {
+    background-color: #800020; /* Burgundy to match header */
+    color: #F5F5DC; /* Cream text for elegance */
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Footer text */
+.footer-text {
+    margin: 0;
+}

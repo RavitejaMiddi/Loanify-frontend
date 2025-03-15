@@ -1,0 +1,64 @@
+/* Lighter Burgundy background for container */
+.container-fluid.bg-light-burgundy {
+    background-color: rgba(128, 0, 32, 0.8); /* Semi-transparent Burgundy */
+    padding: 40px;
+    color: #ffffff; /* White text */
+}
+
+/* Heading Styling */
+.contact-title {
+    font-size: 50px;
+    margin-bottom: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white; /* White text */
+}
+
+/* Contact subtitle (italicized) */
+.contact-subtitle {
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Contact Text */
+.contact-text {
+    font-size: 20px;
+    margin-top: 15px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Links Styling (for phone and email) */
+.contact-link {
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+    color: #F5F5DC; /* Cream color on hover */
+}
+
+/* Contact Us description text */
+.contact-desc {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-top: 30px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .d-flex {
+        flex-direction: column; /* Stack the sections on smaller screens */
+        align-items: center;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

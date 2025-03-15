@@ -1,0 +1,116 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin-top: 50px;
+}
+
+/* Card Style */
+.card {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #800000;
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 12px 12px 0 0;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+/* Form Input Styles */
+input.form-control, 
+textarea.form-control, 
+select.form-control {
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input.form-control:focus, 
+textarea.form-control:focus, 
+select.form-control:focus {
+    border-color: #800000;
+    box-shadow: 0 0 5px rgba(128, 0, 0, 0.3);
+}
+
+/* Label Styles */
+label {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Form Validation Feedback */
+.is-invalid {
+    border-color: #e74c3c;
+    box-shadow: 0 0 5px rgba(231, 76, 60, 0.3);
+}
+
+.invalid-feedback {
+    color: #e74c3c;
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+/* Submit Button */
+button.btn {
+    font-size: 1rem;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+button.btn-primary {
+    background-color: #800000;
+    border: none;
+    color: white;
+}
+
+button.btn-primary:hover {
+    background-color: #9b2d2f;
+}
+
+button.btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin-top: 20px;
+    }
+
+    .card-body {
+        padding: 15px;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .form-group input, 
+    .form-group select {
+        font-size: 0.9rem;
+    }
+
+    button.btn {
+        font-size: 0.9rem;
+    }
+}

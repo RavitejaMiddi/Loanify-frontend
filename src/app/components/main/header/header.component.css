@@ -1,0 +1,70 @@
+/* General Styles */
+body {
+    font-family: 'Times New Roman', Times, serif; /* Classic and elegant font */
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Styling */
+.navbar {
+    background: linear-gradient(135deg, #800020, #9b2d2f);
+    padding: 12px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff !important;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-brand:hover {
+    color: #F5F5DC !important;
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: white;
+    padding: 12px 18px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+/* Hover & Active Effects */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    background-color: #F5F5DC;
+    color: #800020;
+    font-weight: bold;
+    transform: scale(1.05);
+}
+
+/* Active Page Effect */
+.navbar-nav .nav-item.active .nav-link {
+    background-color: #F5F5DC;
+    color: #800020;
+    font-weight: bold;
+}
+
+/* Mobile Menu */
+@media (max-width: 992px) {
+    .navbar-collapse {
+        background: rgba(128, 0, 32, 0.95);
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 12px;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+}

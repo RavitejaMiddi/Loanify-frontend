@@ -1,0 +1,52 @@
+<div class="card">
+    <!-- card header, color, font details -->
+    <div class="card-header text-center" style="background-color:darkkhaki;" ><h5><b>LAND OFFICER</b></h5></div>
+    <div class="card-body">
+        <div class="container-fluid" style="background-color:rgb(9, 163, 224);">
+            <br>
+            <!-- container containing list of loan applications -->
+            <div class="container-fluid " style="padding-bottom:2%;">
+                <h4 class="text-center mb-4"><b>LIST OF LOAN APPLICATIONS</b></h4>
+                <table class="table bg-light" style="border: 2px;">
+                    <thead class="table-dark">
+                        <!--table containing application id,application date, loan amount,loan tenure years, landofficer, and update status -->
+                        <tr>
+                            <th>ApplicationId</th>
+                            <th>ApplicationDate</th>
+                            <th>LoanAppliedAmount</th>
+                            <th>LoanTenureYears</th>
+                            <th>LandOfficer Status</th>
+                            <th>UpdateStatus</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- repeats the host element for each element in a list -->
+                        <tr *ngFor='let list of loanApplicationList'>
+                            <td scope="row">
+                                {{list.applicationId}}
+                            </td>
+                            <td scope="row">
+                                {{list.applicationDate}}
+                            </td>
+                            <td scope="row">
+                                {{list.loanAppliedAmount}}
+                            </td>
+                            <td scope="row">
+                                {{list.loanTenureYears}}
+                            </td>
+                            <td scope="row">
+                                {{list.landVerificationApproval ? 'Approved': 'Pending'}}
+                            </td>
+                            <td scope="row">
+                                <button class="btn btn-primary"
+                                    (click)="updateList(list.applicationId)">{{list.landVerificationApproval?'Updated':'Update Status'}}</button>
+                            </td>
+
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

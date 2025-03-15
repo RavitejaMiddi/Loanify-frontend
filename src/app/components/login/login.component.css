@@ -1,0 +1,95 @@
+/* Size and alignment of the login container */
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8); /* Light white background to contrast */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Login form background */
+.main {
+    background-image: url('src/assets/img1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Heading for Login */
+.login-heading {
+    font-family: 'Times New Roman', Times, serif; /* Consistent font style */
+    font-size: 2.5rem;
+    color: #800020; /* Burgundy Color */
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+/* Form controls (input fields) */
+.form-group label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #800020; /* Burgundy */
+}
+
+.form-control {
+    font-family: 'Times New Roman', Times, serif; /* Consistent font */
+    font-size: 1rem;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Red border for invalid input */
+input.ng-touched.ng-invalid {
+    border: 3px solid red;
+}
+
+/* User message styling */
+.user {
+    font-weight: bold;
+    font-size: 16px;
+    color: #000;
+}
+
+/* Register link styling */
+.register {
+    color: #800020;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Button styling */
+.btn-primary {
+    background-color: #800020; /* Burgundy color */
+    border-color: #800020;
+    padding: 10px;
+    width: 100%;
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn-primary:hover {
+    background-color: #6A0D24;
+    border-color: #6A0D24;
+}
+
+/* Alert box styling */
+.alert {
+    font-size: 1rem;
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 5px;
+}
+
+/* Bottom spacing */
+.card-footer {
+    text-align: center;
+    margin-top: 20px;
+}
