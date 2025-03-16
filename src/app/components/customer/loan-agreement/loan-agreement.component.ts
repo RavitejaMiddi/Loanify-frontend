@@ -24,32 +24,25 @@ export class LoanAgreementComponent implements OnInit {
   message: string;
   id:number;
   getAgreementId() {
+    console.log("Fetching Loan Agreement ID for:", this.loanApplicationid);
+  
     this.customerService.getLoanAgreementId(this.loanApplicationid).subscribe(
       (response) => {
-        this.loanagreementId = response;
-        console.log(this.loanagreementId);
-        this.id = response;
+        console.log("Received Loan Agreement ID Response:", response);
+  
+        // Assign the response to loanAgreement
+        this.loanAgreement = response;
+        console.log("Loan Agreement Details:", this.loanAgreement);
+  
+        // Set agreementStatus to true to display the data
+        this.agreementStatus = true;
+        this.status = false;
       },
-      (fail) => {
+      (error) => {
+        console.error("Error fetching loan agreement ID:", error);
         this.status = true;
         this.loanStatus = "Agreement Not Found";
         this.agreementStatus = false;
-        this.loanagreementId = null;
       }
     );
-    if (this.loanagreementId == this.id) {
-      this.customerService.getLoanAgreement(this.loanagreementId).subscribe(
-        (result) => {
-          this.agreementStatus = true;
-          this.status = false;
-          this.loanAgreement = result;
-        }
-
-     )
-   }
-
-
-  }
-
-
-}
+  }}

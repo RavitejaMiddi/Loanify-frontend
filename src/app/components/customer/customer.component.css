@@ -1,0 +1,127 @@
+/* General Page Styling */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f5f5f5; /* Soft, neutral background */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Dark gray for readability */
+}
+
+/* Welcome Message */
+h3 {
+    font-size: 2rem;
+    color: #4a3f35; /* Muted brownish-gray (complements burgundy) */
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+/* Card Styling */
+.card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    padding: 20px;
+    max-width: 95%;
+}
+
+/* Card Body */
+.card-body {
+    padding: 20px;
+}
+
+/* Profile Section */
+.bg-secondary {
+    background-color: #e0dcdc !important; /* Soft warm gray */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Profile Button */
+.btn-info {
+    background-color: #5a4b42 !important; /* Dark muted brown */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-info:hover {
+    background-color: #3f332d !important;
+}
+
+/* Table Styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Headers */
+.table-dark {
+    background-color: #4a3f35 !important; /* Soft earthy tone */
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.table td, .table th {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Update Button */
+.btn-primary {
+    background-color: #5a4b42 !important; /* Muted dark brown */
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #3f332d !important;
+}
+
+/* Loan Buttons */
+.container .btn-lg {
+    background-color: #5a4b42 !important;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 12px 24px;
+    transition: 0.3s ease;
+    color: white;
+}
+
+.container .btn-lg:hover {
+    background-color: #d8cfc4 !important; /* Light beige */
+    color: #5a4b42 !important;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .btn-lg {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .table th, .table td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}

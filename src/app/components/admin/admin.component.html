@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col container">
                    
-                    <h3 class="mt-3 mb-3 text-center" >Welcome   {{adminComponent.adminName | titlecase}},</h3>
+                    <h3 class="mt-3 mb-3 text-center" >Welcome   {{adminComponent.adminName | titlecase}}</h3>
                 
             </div>
         </div>
@@ -53,7 +53,7 @@
                 </div>
        <!-- </div>-->
     </div>
-
+    <div class="card">
     <div class="card-body ">
         <div class="container-fluid bg-secondary ">
             <div class="container-fluid" style="padding-top: 1rem;">
@@ -69,8 +69,8 @@
                             <th>ApplicationDate</th>
                             <th>LoanAppliedAmount</th>
                             <th>LoanTenureYears</th>
-                            <th>LandOfficer Status</th>
-                            <th>FinanceOfficer Status</th>
+                            <!-- <th>LandOfficer Status</th> -->
+                            <th>FinanceOfficer/Manager Status</th>
                             <th>Admin Status</th>
                             <th>UpdateStatus</th>
                         </tr>
@@ -89,9 +89,9 @@
                             <td scope="row">
                                 {{list.loanTenureYears}}
                             </td>
-                            <td scope="row">
+                            <!-- <td scope="row">
                                 {{list.landVerificationApproval ? 'Approved':'Waiting for LandOfficer Approval'}}
-                            </td>
+                            </td> -->
                             <td scope="row">
                                 {{list.financeVerificationApproval ? 'Approved':'Waiting for FinanceOfficer Approval'}}
                             </td>
@@ -259,7 +259,7 @@
     </div>
 </div>
 
-<div class="card">
+<!-- <div class="card">
     <div class="card-body">
         <div class="container-fluid bg-secondary">
             <div class="container-fluid" style="padding-top: 1rem;">
@@ -296,7 +296,7 @@
 
         </div>
     </div>
-</div>
+</div> -->
 
 
 
@@ -380,7 +380,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm">
+        <!-- <div class="col-sm">
             <div class="row container-fluid bg-secondary">
                 <div class="col">
                     <div class="row centered-form">
@@ -463,8 +463,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="col-sm "style=" boader: 10px;">
+            <div class="row container-fluid bg-secondary">
             <div class="col">
                 <div class="row centered-form bg-secondary">
                     <div class="col-sm-8 col-md-12 col-sm-offset-2 col-md-offset-4">
@@ -542,6 +543,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
     <br><br>

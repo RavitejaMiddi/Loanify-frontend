@@ -16,32 +16,40 @@
                 <h5>---- Application Status ----</h5>
                 <h6>{{loanStatus}}</h6>
             </div>
-            <div *ngIf=agreementStatus class="mt-3">
+            <div *ngIf="agreementStatus">
+                <!-- <pre>{{ loanAgreement | json }}</pre> Debugging -->
                 <table class="table table-hover table-bordered">
                     <thead>
                         <tr class="table-active">
                             <th scope="col">Loan Application Id</th>
+                            <th scope="col">Loan Agreement Id</th>
                             <th scope="col">Loan Amount</th>
-                            <th scope="col">Intrest Amount</th>
-                            <th scope="col">Emi Amount</th>
+                            <th scope="col">Interest Amount</th>
+                            <th scope="col">EMI Amount</th>
                             <th scope="col">Due date</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="table-light">
-                            <td>{{loanAgreement.loanApplicationId}}</td>
-                            <td>{{loanAgreement.emi.loanAmount | number:'1.1-2'}}</td>
-                            <td>{{loanAgreement.emi.interestAmount | number:'1.1-2'}}</td>
-                            <td>{{loanAgreement.emi.emiAmount | number:'1.1-2'}}</td>
-                            <td>{{loanAgreement.emi.dueDate | date}}</td>
+                            <td>{{loanAgreement?.loanApplicationId}}</td>
+                            <td>{{loanAgreement?.loanAgreementId}}</td>
+                            <td>{{loanAgreement?.emi?.loanAmount | number:'1.1-2'}}</td>
+                            <td>{{loanAgreement?.emi?.interestAmount | number:'1.1-2'}}</td>
+                            <td>{{loanAgreement?.emi?.emiAmount | number:'1.1-2'}}</td>
+                            <td>{{loanAgreement?.emi?.dueDate | date}}</td>
                         </tr>
                     </tbody>
                 </table>
-
             </div>
+            
         </div>
         <div class="card-footer">
-            <small class="text-muted">Didn't apply Loan ! <a [routerLink]="['/customer/loanApply']">Click Here</a></small>
+            <small class="text-muted">Haven't applied for a loan yet? <a [routerLink]="['/customer/loanApply']">Apply now</a></small>
+        </div>
+        <div class="card-footer">
+            <small class="text-muted">
+                Return to your profile anytime. <a [routerLink]="['/customer']">Go to Profile</a>
+            </small>
         </div>
         
     </div>

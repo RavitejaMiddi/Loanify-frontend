@@ -52,6 +52,12 @@
  <div *ngIf='message != null' [ngClass]='msgClass' (click)='gotoCustomerHome()'>
     {{message}}! 
 </div>
+<div class="card-footer">
+    <small class="text-muted">
+        Return to your profile anytime. <a [routerLink]="['/customer']">Go to Profile</a>
+    </small>
+</div>
+
 </div>
     
 
