@@ -39,7 +39,7 @@ export class FinanceOfficerComponent implements OnInit {
   updateList(id:number): void {
     this.financeOfficerService.updateStatus(id,id).subscribe(
       result => {
-        alert("Update Sucessfully!!!")
+        alert("Updated Sucessfully!!!")
         this.getList()
       });
 

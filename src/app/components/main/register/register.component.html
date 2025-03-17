@@ -109,35 +109,36 @@
                 </div>
 
                 <div class="form-group row mb-4">
-                    <label class="col-md-4 col-form-label" for="aadharNumberId">Driver’s License</label>
+                    <label class="col-md-4 col-form-label" for="driversLicence">Driver’s License</label>
                     <div class="col-md-8">
-                        <input class="form-control" id="aadharNumberId" type="text" placeholder="5555 4444 3333" required
+                        <input class="form-control" id="driversLicence" type="text" placeholder="5555 4444 3333" required
                             pattern="^[2-9]{1}[0-9]{3}[0-9]{4}[0-9]{4}$"
-                            [(ngModel)]="customer.aadharNumber" name="aadharNumber" #aadharNumberVar="ngModel"
-                            [ngClass]="{'is-invalid': (aadharNumberVar.touched || aadharNumberVar.dirty) && !aadharNumberVar.valid }" />
+                            [(ngModel)]="customer.driversLicence" name="driversLicence" #driversLicenceVar="ngModel"
+                            [ngClass]="{'is-invalid': (driversLicenceVar.touched || driversLicenceVar.dirty) && !driversLicenceVar.valid }" />
                         <div class="invalid-feedback">
-                            <span *ngIf="aadharNumberVar.errors?.required">
+                            <span *ngIf="driversLicenceVar.errors?.required">
                                 Please enter your Driver's License Number.
                             </span>
-                            <span *ngIf="aadharNumberVar.errors?.pattern">
+                            <span *ngIf="driversLicenceVar.errors?.pattern">
                                 Please enter a valid Driver's License.
                             </span>
                         </div>
                     </div>
                 </div>
+                
 
                 <div class="form-group row mb-4">
-                    <label class="col-md-4 col-form-label" for="panNumberId">SSN</label>
+                    <label class="col-md-4 col-form-label" for="ssnId">SSN</label>
                     <div class="col-md-8">
-                        <input class="form-control" id="panNumberId" type="text" placeholder="ABCDE1234F" required
+                        <input class="form-control" id="ssnId" type="text" placeholder="ABCDE1234F" required
                             pattern="[A-Z]{5}[0-9]{4}[A-Z]{1}"
-                            [(ngModel)]="customer.panNumber" name="panNumber" #panNumberVar="ngModel"
-                            [ngClass]="{'is-invalid': (panNumberVar.touched || panNumberVar.dirty) && !panNumberVar.valid }" />
+                            [(ngModel)]="customer.ssn" name="ssn" #ssnVar="ngModel"
+                            [ngClass]="{'is-invalid': (ssnVar.touched || ssnVar.dirty) && !ssnVar.valid }" />
                         <div class="invalid-feedback">
-                            <span *ngIf="panNumberVar.errors?.required">
+                            <span *ngIf="ssnVar.errors?.required">
                                 Please enter your Social Security Number.
                             </span>
-                            <span *ngIf="panNumberVar.errors?.pattern">
+                            <span *ngIf="ssnVar.errors?.pattern">
                                 Please enter a valid Social Security Number.
                             </span>
                         </div>

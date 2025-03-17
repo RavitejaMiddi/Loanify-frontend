@@ -6,7 +6,7 @@ export class Customer extends User{
     dateOfBirth:Date;
     gender:string;
     nationality:string;
-    aadharNumber:string;
-    panNumber:string;
+    driversLicence:string;
+    ssn:string;
 
 }

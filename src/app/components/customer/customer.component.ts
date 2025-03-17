@@ -24,7 +24,7 @@ export class CustomerComponent implements OnInit {
        
   let jwtData = token.split('.')[1]
   let payLoad = JSON.parse(window.atob(jwtData))
-
+    
 let username :string=payLoad.user;
 this.customerName = username;
 

@@ -27,7 +27,7 @@ export class RegisterComponent implements OnInit {
     this.customerService.addCustomer(this.customer).subscribe(
       result => {
         
-        alert("Register Successfully !!! ")
+        alert("You've successfully registered!")
         this.router.navigate(['login'])
       }
     );

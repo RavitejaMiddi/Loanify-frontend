@@ -22,8 +22,8 @@ export class UpdateComponent implements OnInit {
     dateOfBirth: null,
     gender: null,
     nationality: null,
-    aadharNumber: null,
-    panNumber: null,
+    driversLicence: null,
+    ssn: null,
     username: '',
     password: undefined,
     role: undefined
